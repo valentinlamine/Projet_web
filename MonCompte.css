@@ -55,6 +55,12 @@ li {
     font-size: 32px;
 }
 
+li.menu {
+    padding: 10px;
+    font-size: 20px;
+
+}
+
 a {
     text-decoration: none;
     color: #ffffff;
@@ -64,27 +70,43 @@ a:hover {
     color: #195FA5;
 }
 
-.background {
-    position: absolute;
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
-    z-index: 50;
-    filter: blur(2px);
+    
 }
 
-.connexion {
+.moncompte {
+    background-image: url("images/unknown.png");
+}
+
+.carré {
     color: white;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 40%;
+    height: 55%;
+    width: 35%;
     transform: translate(-50%, -50%);
     font-size: larger;
     font-weight: bolder;
     border: 2px solid black;
     border-radius: 10px;
-    border-color: white;
-    z-index: 999;
-    margin: 20px;
-    padding: 50px;
+    border-color: #1E1E1E;
+    background-color: #1E1E1E;
+    z-index: 2;
+    
+    
+}
+
+li.menu {
+    display: inline;
+    justify-content: space-around;
+    align-items: flex-end;
+    
 
 }
+
+
