@@ -130,6 +130,17 @@
     border-color: blue;
 }
 
+
+.textcontent{
+    position: relative;
+    margin-left: 20%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    width: 100%;
+    height: 100%;
+    background-color: #4A0000;
+}
+
 .message_input::placeholder {
     visibility: hidden;
 }
@@ -139,6 +150,9 @@
 }
 
 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     height: 70vh;
 }
