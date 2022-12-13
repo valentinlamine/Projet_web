@@ -1,42 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <link rel="stylesheet" href="MonCompte.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.ico" />
     <title>Document</title>
 </head>
-<body class="moncompte">
-        <div class="header">
-            <a href="index.html" class="logo">
-                <div class="logo">
-                    <img src="images/logo.svg" alt="logo">
-                    <p>YamisAuto</p>
-                </div>
-            </a>
-            <div class="lien">
-                <nav>
-                    <ul>
-                    <li><a href="achat.html">Achat</a></li>
-                    <li><a href="location.html">Location</a></li>
-                    <li><a href="contact.html">Qui sommes nous</a></li>
-                    <li><a href="compte.html">Mon compte</a></li>
-                    </ul>
-                </nav>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo">
+                <p>YamisAuto</p>
+            </div>
+        </a>
+        <div class="lien">
+            <nav>
+                <ul>
+                <li><a href="achat.html">Achat</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Qui sommes nous</a></li>
+                <li><a href="compte.html">Mon compte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class = "WhithoutHeader">
+        <div class = "square" >
+            <div class = "divform">
+                <label class = "title">Mon compte</label>
+                <form class="form" action="MonCompte.html" method="post">
+                    <div class = "input">
+                        <input class ="param" type="email" name="email" placeholder="E-mail">
+                        <input class ="param" type="password" name="password" placeholder="Mot de passe">
+                        <div class = "PetiteDiv">
+                            <input class ="souvenir" type="checkbox" name="souvenir" value="souvenir"> <label>Se souvenir de moi</label>
+                        </div>
+                        <div class = "login">
+                            <input class = "log" type="submit" value="Se connecter">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class = "href">
+                <a href="achat.html">Mot de passe oublié ?</a>
+                <a href="location.html">Retour à l'accueil</a>
             </div>
         </div>
-
-        <div class = "carré" >
-            <ul>
-                <li class = "menu"> <a href="achat.html">Mot de passe oublié ?</a></li>
-                <li class = "menu"> <a href="location.html">Retour à l'accueil</a></li>
-            </ul>
-        </div>
-    
-    
-    
-    
-
+    </div>
 </body>
 </html>
