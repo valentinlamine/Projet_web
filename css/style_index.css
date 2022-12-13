@@ -55,6 +55,10 @@
     align-items: center;
 }
 
+.lien_mobile {
+    display: none;
+}
+
 li {
     padding: 0px 10px;
     display: inline;
@@ -70,4 +74,16 @@ a {
 
 a:hover {
     color: #195FA5;
+}
+
+@media screen and (max-width: 991px) {
+    .lien {
+        display: none;
+    }
+    .lien_mobile {
+        display: inline;
+    }
+    .menu {
+        display: none;
+    }
 }
