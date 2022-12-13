@@ -18,17 +18,11 @@
                     </a>
                 </div>
             <div class="lien">
-                <nav>
-                    <ul>
-                    <li><a href="achat.html">Achat</a></li>
-                    <li><a href="location.html">Location</a></li>
-                    <li><a href="contact.html">Qui sommes nous</a></li>
-                    <li><a href="compte.html">Mon compte</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="lien_mobile">
-                <button class="hamburger">&#9776;</button>
+                <input class="menu_button" type="checkbox" id="menu_button">
+                <label for="menu_button">
+                    <img src="images/menu.svg" alt="menu" class="burger">
+                    <img src="images/close.svg" alt="close" class="close">
+                </label>
                 <nav class="menu">
                     <ul>
                     <li><a href="achat.html">Achat</a></li>
@@ -38,6 +32,19 @@
                     </ul>
                 </nav>
             </div>
+        </div>
+        <div class="content">
+            <h1 class="title">YamisAuto plus qu'une voiture</h1>
+            <form action="/" class="search_bar">
+                <input type="text" autofocus class="search_input" name="search" placeholder="Cherchez par marque, modèle, catégorie...">
+                <div class="search_icon">
+                    <svg width="1" height="45" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="45" x2="0.5" stroke="#90E0EF"/></svg>
+                    <button type="submit" class="search_button">
+                        <img src="images/search.svg" alt="search" class="search_icon">
+                    </button>
+                </div>
+            </form>
+            <img src="images/line.svg" alt="line" class="line">
         </div>
     </div>
 </body>
