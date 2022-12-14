@@ -37,6 +37,7 @@
     background-color: rgb(45, 46, 52);
     height: 100%;
     width: 100%;
+    font-size: 2em;
     justify-content: center;
     align-items: center;
     padding: auto;
@@ -52,7 +53,7 @@
     background-color: #232429;
     color: #ffffff;
     padding: 10px;
-    height: 45vh;
+    height: 35vh;
     display: flex;
 }
 
@@ -130,33 +131,73 @@
     border-color: blue;
 }
 
-
-.textcontent{
-    position: relative;
-    margin-left: 20%;
-    margin-top: 15%;
-    margin-bottom: 15%;
-    width: 100%;
-    height: 100%;
-    background-color: #4A0000;
-}
-
-.message_input::placeholder {
-    visibility: hidden;
-}
-
-.contactinfo {
-    margin-top: 20px;
-}
-
 .content {
+    display: flex;
+    background-color: #8E8E8E;
+    height: 60vh;
+}
+.redcontent{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 15%;
+    margin-right:15%;
+    width: 800%;
+    height: 90;
+    background-color: #4A0000;
+    border-radius: 20px;
+}
+.title-textcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.37em;
+    margin-top: 1.5em;
+    color: white;
+}
+.textcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.37em;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    line-break: auto;
+    text-align: center
+    
+}
+.arccircle{
+    background: rgb(35,36,41);
+    background: linear-gradient(0deg, rgba(35,36,41,1) 0%, rgba(30,37,73,1) 100%);
+    padding: 10px;
+}
+.arccircle-1{
+    rotate: 180deg;
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 100% 0 0;
+    border-color: black;
+    border-width: thick;
+    border-radius: 100% 0 0;
+}
+.textcircle{
+    rotate: 180deg;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    height: 70vh;
+    color: white;
+    font-size: 2.4em;
+    padding-right: 15%;
+    padding-bottom: 52%;
 }
-
+.message_input::placeholder {
+    visibility: hidden;
+}
+.contactinfo {
+    margin-top: 20px;
+}
 .left {
     max-width: 33%;
     min-width: 33%;
