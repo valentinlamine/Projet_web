@@ -13,7 +13,7 @@
 }
 
 body {
-    background-image: url("images/unknown.png");
+    background-image: url("../images/unknown.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
