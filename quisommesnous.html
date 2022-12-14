@@ -5,7 +5,7 @@
     <link rel="icon" href="images/logo.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_quisommesnous.css">
     <title>YamisAuto | Qui Sommes Nous ?S</title>
 </head>
 <body>
@@ -27,14 +27,71 @@
             </nav>
         </div>
     </div> 
-    <div class="backtotop">
-        <button class="buttontotop" href="#top">Retour en Haut </button>   
-    </div>
-    <div class ="footage">
-        <div class ="info_footage">
-            <div class ="apropos">
+    <div class="content">
+        <div class="circle">
+            <div class="arccircle arccircle-1">
+                <div class="textcircle">
+                    Fondé en<br>2001
+            </div>
+            </div>
+          </div>
+        <div class="redcontent">
+            <div class="title-textcontent">
+                Lorem Ipsum
+            </div>
+            <div class="textcontent">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac vehicula dolor. Donec eu diam diam. Pellentesque ac quam tellus. Aliquam erat volutpat. Integer a vulputate orci. Nam sit amet quam eget mi auctor imperdiet lacinia ut enim. Suspendisse bibendum accumsan volutpat. Proin nec ante nec ligula condimentum vulputate euismod at sapien. Integer sed lacus sed lacus euismod aliquet. Aliquam non sollicitudin leo. Sed diam lacus, eleifend ac suscipit eget, tincidunt sit amet augue. Quisque aliquet mauris id enim ullamcorper consequat. Nulla tincidunt pellentesque augue, sed dignissim sapien euismod non.
+
+Curabitur et ex accumsan, gravida nulla ut, dapibus diam. Nunc mi dolor, interdum a sagittis vitae, cursus ac sapien. Proin quis auctor purus, at consequat tellus. Nam tristique placerat ante dictum pulvinar. Ut ac enim viverra, hendrerit velit ut, ultricies lectus. Nunc eget eros vitae orci ultricies vulputate at et velit. Sed vitae arcu aliquet, finibus nunc vel, sodales felis. Fusce euismod ligula eu diam lacinia sollicitudin. Nullam sodales mattis tristique. Donec euismod enim nisl, nec placerat ligula elementum nec. In a volutpat libero, vitae tempus orci. Duis rhoncus mi semper, ultricies nisi vel, feugiat mauris.
+
+            </div>
+            
         </div>
     </div>
-    
+    <div class ="backtotop">
+        <button class="buttontotop" onclick="window.location.href='#top'">Retour en Haut</button>
+    </div>
+    <div class ="footer">
+        <div class="left">
+            <div class="title">
+                Contact
+            </div>
+            <div class="text">
+                <p class="contactinfo">Adresse : 1 rue de la paix, 75000 Paris</p>
+                <p class="contactinfo">Téléphone : 01 23 45 67 89</p>
+                <p class="contactinfo">Mail : contact@yamisuto.com</p>
+            </div>
+        </div>
+        <div class="center">
+            <div class="title">
+                Nous contacter
+            </div>
+            <div class="text">
+                <form action="mailto:">
+                    <input class="input" type="text" name="name" placeholder=" Votre Nom" required>
+                    <input class="input" type="text" name="firstname" placeholder=" Votre Prénom" required>
+                    <input class="input" type="text" name="mail" placeholder=" Votre adresse mail" required>
+                    <div class="buttondiv">
+                        <button class="button" type="submit">Envoyer</button>
+                    </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="title">
+                Votre message
+        </div>
+        <div class="text">
+            <select class="select_input" name="message" id="message" required>
+                <option value="">Sélectionnez un type de message</option>
+                <option value="message">Support</option>
+                <option value="question">Question</option>
+                <option value="suggestion">Contact</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="autre">Autre</option>
+            <textarea class="message_input" type="text" name="message" placeholder="Entrez votre message" required></textarea>
+        </form>
+
+        </div>
+    </div>
 </body>
 </html>
