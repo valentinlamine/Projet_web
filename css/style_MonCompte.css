@@ -72,6 +72,7 @@ li {
 }
 
 /* fin header */
+
 /* debut page */
 
 a, label {
@@ -118,7 +119,7 @@ a:hover {
 
 .param {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 200%;
     border-radius: 10px;
     padding: 5px;
 }
@@ -129,8 +130,9 @@ a:hover {
     background-color: #195FA5;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    padding: 7px;
+    font-size: 200%;
+    padding: 7px 10px;
+    cursor: pointer;
 }
 
 .input {
@@ -148,8 +150,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    padding-top: 20px;
-    font-size: 30px;
+    padding-top: 25px;
+    font-size: 250%;
     font-weight: 700;
 }
 
@@ -161,11 +163,12 @@ a:hover {
 
 .souvenir {
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .href {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 140%;
     font-weight: 'Roboto', sans-serif;
     width: 100%;
     display: flex;
@@ -179,6 +182,42 @@ a:hover {
 }
 
 
- 
+/* Responsive */
 
+@media screen and (max-width: 991px) {
+    .square {
+        width: 60%;
+    }
 
+    .param {
+        font-size: 150%;
+    }
+
+    .href{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .square {
+        width: 80%;
+    }
+
+    .param {
+        font-size: 100%;
+        padding-top: 10px;
+    }
+
+    .href{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .href {
+        flex-direction: column;
+        align-items: center;
+    }
+}
