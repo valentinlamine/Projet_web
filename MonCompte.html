@@ -10,37 +10,42 @@
 </head>
 <body>
     <div class="header">
-        <a href="index.html" class="logo">
-            <div class="logo">
-                <img src="images/logo.svg" alt="logo">
-                <p>YamisAuto</p>
-            </div>
-        </a>
+        <div class="logo">
+            <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="logo">
+            <p>YamisAuto</p>
+            </a>
+        </div>
         <div class="lien">
-            <nav>
+            <input class="menu_button" type="checkbox" id="menu_button">
+            <label for="menu_button">
+                <img src="images/menu.svg" alt="menu" class="burger">
+                <img src="images/close.svg" alt="close" class="close">
+            </label>
+            <nav class="menu">
                 <ul>
                 <li><a href="achat.html">Achat</a></li>
                 <li><a href="location.html">Location</a></li>
-                <li><a href="contact.html">Qui sommes nous</a></li>
-                <li><a href="compte.html">Mon compte</a></li>
+                <li><a href="quisommesnous.html">Qui sommes nous</a></li>
+                <li><a href="MonCompte.html">Mon compte</a></li>
                 </ul>
             </nav>
         </div>
     </div>
     <div class = "WhithoutHeader">
         <div class = "square" >
-            <div class = "divform">
+            <div class = "form_box">
                 <label class = "title">Mon compte</label>
-                <form class="form" action="MonCompte.html" method="post">
-                    <div class = "input">
-                        <input class ="param" type="email" name="email" placeholder="E-mail">
-                        <input class ="param" type="password" name="password" placeholder="Mot de passe">
-                        <div class = "PetiteDiv">
-                            <input class ="souvenir" type="checkbox" name="souvenir" value="souvenir"> <label>Se souvenir de moi</label>
+                <form class = "form" action="MonCompte.html" method="post">
+                    <div class = "div-form">
+                        <div class="inputs">
+                            <input class ="param" type="email" name="email" placeholder="E-mail">
+                            <input class ="param" type="password" name="password" placeholder="Mot de passe">
+                            <div class = "PetiteDiv">
+                                <input class ="souvenir" type="checkbox" name="souvenir" value="souvenir"> <label>Se souvenir de moi</label>
+                            </div>
                         </div>
-                        <div class = "login">
-                            <input class = "log" type="submit" value="Se connecter">
-                        </div>
+                        <input class = "login" type="submit" value="Se connecter">
                     </div>
                 </form>
             </div>
