@@ -77,38 +77,6 @@ a:hover {
     color: #195FA5;
 }
 
-/* page */
-
-/*
-.backtotop {
-    border: none;
-    background-color: #26272c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75px;
-    max-height: 100px;
-}
-
-.buttontotop {
-    border: none;
-    background-color: rgb(45, 46, 52);
-    height: 100%;
-    width: 100%;
-    font-size: 2em;
-    justify-content: center;
-    align-items: center;
-    padding: auto;
-    cursor: pointer;
-    color: white;
-}
-
-
-.buttontotop:hover {
-    background-color: #36373d;
-}
-*/
-
 .footer {
     display: flex;
     background-color: #232429;
@@ -141,7 +109,6 @@ a:hover {
     align-items: center;
     padding-top: 0.9em;
     font-size: 1.37em;
-    margin-top: 1.5em;
 
 }
 
@@ -173,9 +140,10 @@ a:hover {
     margin-bottom: 10px;
     border-radius: 5px;
     border-color: blue;
-    margin-top: 10px;
 }
-
+.buttontotop{
+    display: none;
+}
 .button {
     font-size: 1em;
     background-color: #195FA5;
@@ -410,5 +378,13 @@ a:hover {
         padding: auto;
         cursor: pointer;
         color: white;
+    }
+    .input{
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border-color: black;
+        margin-top: 20px;
+        align-self: center;
     }
 }
