@@ -113,7 +113,6 @@ a:hover {
     display: flex;
     background-color: #232429;
     color: #ffffff;
-    padding: 10px;
 }
 
 .title {
@@ -363,7 +362,6 @@ a:hover {
     .menu_button:checked ~ .menu {
         display: block;
     }
-
     .footer{
         display: flex;
         flex-direction: column;
@@ -395,14 +393,22 @@ a:hover {
         margin-top: 0em;
 
     }
-    .input{
-            height: 20px;
-            width: 200px;
-    }
     .buttondivpc{
         display: none;
     }
     .buttondivtel{
         display: flex;
+    }
+    .buttontotop {
+        border: none;
+        background-color: rgb(45, 46, 52);
+        width: 100%;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        cursor: pointer;
+        color: white;
     }
 }
