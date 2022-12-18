@@ -145,6 +145,9 @@ a:hover {
     display: none;
 }
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1em;
     background-color: #195FA5;
     color: white;
