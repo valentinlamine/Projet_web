@@ -171,13 +171,14 @@ a:hover {
 }
 
 .content {
-    background-color: #8E8E8E;
+    background: rgb(35,36,41);
+    background: linear-gradient(270deg, rgba(35,36,41,1) 0%, rgba(30,37,73,1) 100%);
     display: flex;
-    
 }
 .redcontent{
-    margin: 0px 30px 30px 30px;
-    background-color: #4A0000;
+    max-height: auto;
+    height: auto;
+    margin: 1% 1% 1% 1%;
     border-radius: 20px;
 }
 .title-textcontent{
@@ -185,7 +186,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     font-size: 1.37em;
-    margin-top: 1.5em;
     color: white;
 }
 .textcontent{
@@ -252,7 +252,9 @@ a:hover {
     height: 100%;
 }
 
-
+.fonde2001{
+    display: none;
+}
 .to-top {
     background: white;
     position: fixed;
@@ -277,7 +279,6 @@ a:hover {
     pointer-events: auto;
     opacity: 1;
 }
-
 .buttondivpc {
     display: flex;
     justify-content: center;
@@ -287,6 +288,7 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
+    /* Header */
     .menu_button, .menu_button + label  {
         display: block;
     }
@@ -333,17 +335,37 @@ a:hover {
     .menu_button:checked ~ .menu {
         display: block;
     }
-    .footer{
-        display: flex;
+    /* Header End */
+    /* Content */
+    .content{
+        height: auto;
         flex-direction: column;
+    }
+    .fonde2001{
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        font-size: 1.5em;
+        color: white;
+    }
+    .redcontent {
+        flex-direction: column;
+        height: auto;
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
+    /* Circle Arc */
     .circle{
         display: none;
     }
-    .redcontent {
+    /* Circle Arc End*/
+    /* Content End */
+    /* Footer */
+    .footer{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
     .left{
@@ -364,6 +386,7 @@ a:hover {
         margin-top: 0em;
 
     }
+    /* Input */
     .buttondivpc{
         display: none;
     }
@@ -390,4 +413,6 @@ a:hover {
         margin-top: 20px;
         align-self: center;
     }
+    /* Input End */
+    /* Footer End */;
 }
