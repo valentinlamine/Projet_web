@@ -14,8 +14,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100vw;
     height: 100vh;
 }
 
@@ -29,19 +27,16 @@ body {
     display: flex;
     align-items: center;
 }
-
 .logo {
     display: flex;
     align-items: center;
     height: 100%;
 }
-
 .logo p {
     font-weight: 700;
     font-size: 2.8em;
     color: #195FA5;
 }
-
 .logo img {
     padding-right: 10px;
     max-width: 100%;
@@ -49,17 +44,14 @@ body {
     object-fit: cover;
     display: block;
 }
-
 .lien {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .menu_button, .menu_button + label  {
     display: none;
 }
-
 li {
     padding: 0px 10px;
     display: inline;
@@ -67,118 +59,28 @@ li {
     color: #ffffff;
     font-weight: 400;
 }
-
 a {
     text-decoration: none;
     color: #ffffff;
 }
-
 a:hover {
     color: #195FA5;
 }
-
-.footer {
-    display: flex;
-    background-color: #232429;
-    color: #ffffff;
-}
-
-.title {
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    text-align: center;
-
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1.6em;
-    font-size: 1.37em;
-    margin-top: 1.5em;
-
-}
-
-.textfooter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0.9em;
-    font-size: 1.37em;
-
-}
-
-.input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 40px;
-    width: 400px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.message {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1.6Sem;
-    font-size: 1.37em;
-    margin-top: 1.5em;
-}
-
-.select_input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 22px;
-    width: 225px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border-color: blue;
-}
-.buttontotop{
-    display: none;
-}
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-    background-color: #195FA5;
-    color: white;
-    height: 50px;
-    width: 150px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border-color: black;
-    margin-top: 20px;
-    align-self: center;
-}
-
-.message_input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 120px;
-    width: 350px;
-    border-radius: 10px;
-    border-color: blue;
-}
-
+/* Header End */
+/*Content*/
 .content {
     background: rgb(35,36,41);
     background: linear-gradient(270deg, rgba(35,36,41,1) 0%, rgba(30,37,73,1) 100%);
     display: flex;
+    height: 110%;
+}
+.fonde2001{
+    display: none;
 }
 .redcontent{
     max-height: auto;
     height: auto;
-    margin: 1% 1% 1% 1%;
+    margin: 4% 2% 2% 1%;
     border-radius: 20px;
 }
 .title-textcontent{
@@ -226,6 +128,72 @@ a:hover {
     padding-right: 15%;
     padding-bottom: 52%;
 }
+/* Content End */
+/* Footer */
+.footer {
+    display: flex;
+    background-color: #232429;
+    color: #ffffff;
+}
+.title {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+}
+.left {
+    max-width: 33%;
+    min-width: 33%;
+    height: 100%;
+}
+.center {
+    max-width: 33%;
+    min-width: 33%;
+    height: 100%;
+    border-radius: 10px;
+}
+.right {
+    max-width: 33%;
+    min-width: 33%;
+    height: 100%;
+}
+.textfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.9em;
+    font-size: 1.37em;
+}
+/* Input Footer */
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40px;
+    width: 400px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.6Sem;
+    font-size: 1.37em;
+    margin-top: 1.5em;
+}
+.select_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 22px;
+    width: 225px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: blue;
+}
 .message_input::placeholder {
     visibility: hidden;
 }
@@ -233,27 +201,32 @@ a:hover {
     margin-top: 20px;
     align-items: center;
 }
-.left {
-    max-width: 33%;
-    min-width: 33%;
-    height: 100%;
-}
-
-.center {
-    max-width: 33%;
-    min-width: 33%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.right {
-    max-width: 33%;
-    min-width: 33%;
-    height: 100%;
-}
-
-.fonde2001{
+.buttontotop{
     display: none;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    background-color: #195FA5;
+    color: white;
+    height: 50px;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: black;
+    margin-top: 20px;
+    align-self: center;
+}
+.message_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    width: 350px;
+    border-radius: 10px;
+    border-color: blue;
 }
 .to-top {
     background: white;
@@ -273,7 +246,6 @@ a:hover {
     pointer-events: none;
     transition: all .4s;
 }
-
 .to-top.active {
     bottom: 32px;
     pointer-events: auto;
@@ -286,6 +258,8 @@ a:hover {
 .buttondivtel{
     display: none;
 }
+/* Input Footer End */
+/* Footer End */
 
 @media screen and (max-width: 991px) {
     /* Header */
@@ -367,6 +341,7 @@ a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
     .left{
         max-height: 100%;
