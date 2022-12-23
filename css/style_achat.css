@@ -151,6 +151,7 @@ a:hover {
 
 .firstline {
     background-color: #1E1E1E;
+    padding-top: 10px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -161,10 +162,8 @@ a:hover {
 .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
     background-color: white;
     border-radius: 15px;
-    padding: 20px;
     height: 32%;
     width: 21%;
-    padding: 0;
 }
 
 .img1, .img2, .img3, .img4 {
