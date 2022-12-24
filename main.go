@@ -13,8 +13,8 @@ func main() {
 	fs := http.FileServer(http.Dir("css"))
 	http.Handle("/css/", http.StripPrefix("/css/", fs))
 	//gestion img
-	img := http.FileServer(http.Dir("img"))
-	http.Handle("/img/", http.StripPrefix("/img/", img))
+	images := http.FileServer(http.Dir("images"))
+	http.Handle("/images/", http.StripPrefix("/images/", images))
 	//gestion html
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/Achat", buyHandler)
