@@ -1,8 +1,10 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"html/template"
+	"io/ioutil"
 	"net/http"
 )
 
@@ -58,6 +60,22 @@ func accountHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func registerHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Email":    r.FormValue("email"),
+		"Password": r.FormValue("password"),
+	}
+
+	jsonData, err := json.Marshal(data)
+	if err != nil {
+		fmt.Printf("could not marshal json: %s\n", err)
+		return
+	}
+
+	fmt.Printf("json data: %s\n", jsonData)
+	file, _ := json.MarshalIndent(data, "", " ")
+
+	_ = ioutil.WriteFile("info.json", file, 0644)
+
 	tmpl5 := template.Must(template.ParseFiles("templates/Inscription.html"))
 	tmpl5.Execute(w, nil)
 }
