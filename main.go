@@ -20,6 +20,7 @@ func main() {
 	http.HandleFunc("/Achat", buyHandler)
 	http.HandleFunc("/QuiSommesNous", whoareusHandler)
 	http.HandleFunc("/MonCompte", accountHandler)
+	http.HandleFunc("/Inscription", registerHandler)
 	http.ListenAndServe(":80", nil)
 }
 
@@ -54,4 +55,9 @@ func whoareusHandler(w http.ResponseWriter, r *http.Request) {
 func accountHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl4 := template.Must(template.ParseFiles("templates/MonCompte.html"))
 	tmpl4.Execute(w, nil)
+}
+
+func registerHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl5 := template.Must(template.ParseFiles("templates/Inscription.html"))
+	tmpl5.Execute(w, nil)
 }
