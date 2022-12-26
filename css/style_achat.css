@@ -12,6 +12,11 @@
     overflow: hidden;
 }
 
+.body {
+    height: 100vh;
+    width: 100vw;
+}
+
 /* debut header */
 
 .header {
@@ -74,7 +79,7 @@ a:hover {
 /* fin header */
 
 
-/* debut page */
+/* debut barre recherche et titre */
 
 .WithOutHeader {
     height: 100vh;
@@ -88,6 +93,14 @@ a:hover {
     color: #ffffff;
     font-weight: 700;
     padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .search_bar {
@@ -126,4 +139,51 @@ a:hover {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.search_button:hover {
+    color: #195FA5;
+}
+
+/* fin barre recherche et titre */
+
+/* debut liste des produits */
+
+.firstline {
+    background-color: #1E1E1E;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    height: 32%;
+    width: 21%;
+    padding: 0;
+}
+
+.img1, .img2, .img3, .img4 {
+    margin-top: 15px;
+}
+
+.img5, .img6, .img7, .img8 {
+    margin-bottom: 30px;
+}
+
+.background {
+    background-color: yellow;
+    height: 50%;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.text{
+    height: 50%;
 }
