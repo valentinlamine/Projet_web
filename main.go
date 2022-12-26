@@ -23,6 +23,7 @@ func main() {
 	http.HandleFunc("/QuiSommesNous", whoareusHandler)
 	http.HandleFunc("/MonCompte", accountHandler)
 	http.HandleFunc("/Inscription", registerHandler)
+	http.HandleFunc("/Resultats", resultHandler)
 	http.ListenAndServe(":80", nil)
 }
 
@@ -59,23 +60,53 @@ func accountHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl4.Execute(w, nil)
 }
 
+type User struct {
+	Email    string
+	Password string
+}
+
 func registerHandler(w http.ResponseWriter, r *http.Request) {
 	data := map[string]interface{}{
 		"Email":    r.FormValue("email"),
 		"Password": r.FormValue("password"),
 	}
 
-	jsonData, err := json.Marshal(data)
+	jsonData, err := ioutil.ReadFile("users.json")
 	if err != nil {
 		fmt.Printf("could not marshal json: %s\n", err)
 		return
 	}
-
-	fmt.Printf("json data: %s\n", jsonData)
-	file, _ := json.MarshalIndent(data, "", " ")
-
-	_ = ioutil.WriteFile("info.json", file, 0644)
+	//decode les données du fichier json dans une map
+	var users []User
+	err = json.Unmarshal(jsonData, &users)
+	if err != nil {
+		fmt.Printf("could not unmarshal json: %s\n", err)
+		return
+	}
+	//ajouter les données du formulaire dans la map
+	users = append(users, User{
+		Email:    data["Email"].(string),
+		Password: data["Password"].(string),
+	})
+	//encoder les données de la map dans un fichier json
+	jsonData, err = json.Marshal(users)
+	if err != nil {
+		fmt.Printf("could not marshal json: %s\n", err)
+		return
+	}
+	//écrire les données dans le fichier json
+	err = ioutil.WriteFile("users.json", jsonData, 0644)
+	if err != nil {
+		fmt.Printf("could not write json: %s\n", err)
+		return
+	}
 
 	tmpl5 := template.Must(template.ParseFiles("templates/Inscription.html"))
 	tmpl5.Execute(w, nil)
+}
+
+func resultHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Println(r.FormValue("search"))
+	tmpl6 := template.Must(template.ParseFiles("templates/Resultats.html"))
+	tmpl6.Execute(w, nil)
 }
