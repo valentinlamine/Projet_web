@@ -24,51 +24,33 @@ func main() {
 	http.HandleFunc("/MonCompte", accountHandler)
 	http.HandleFunc("/Inscription", registerHandler)
 	http.HandleFunc("/Resultats", resultHandler)
+	http.HandleFunc("/Erreur", errorHandler)
 	http.ListenAndServe(":80", nil)
 }
-
-// func OnlyLetter(s string) bool {
-// 	for _, r := range s {
-// 		if !unicode.IsLetter(r) {
-// 			return false
-// 		}
-// 	}
-// 	return true
-// }
-
-func indexHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl1 := template.Must(template.ParseFiles("templates/index.html"))
-	if r.Method != http.MethodPost {
-		tmpl1.Execute(w, nil)
-		return
+func alreadyregistered(email string) bool {
+	jsonData, err := ioutil.ReadFile("users.json")
+	if err != nil {
+		fmt.Printf("could not marshal json: %s\n", err)
+		return false
 	}
-	tmpl1.Execute(w, nil)
+	//decode les données du fichier json dans une map
+	var users []User
+	err = json.Unmarshal(jsonData, &users)
+	if err != nil {
+		fmt.Printf("could not unmarshal json: %s\n", err)
+		return false
+	}
+	for _, user := range users {
+		if user.Email == email {
+			return true
+		}
+	}
+	return false
 }
-
-func buyHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl2 := template.Must(template.ParseFiles("templates/Achat.html"))
-	tmpl2.Execute(w, nil)
-}
-
-func whoareusHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl3 := template.Must(template.ParseFiles("templates/quisommesnous.html"))
-	tmpl3.Execute(w, nil)
-}
-
-func accountHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl4 := template.Must(template.ParseFiles("templates/MonCompte.html"))
-	tmpl4.Execute(w, nil)
-}
-
-type User struct {
-	Email    string
-	Password string
-}
-
-func registerHandler(w http.ResponseWriter, r *http.Request) {
+func register(email string, password string) {
 	data := map[string]interface{}{
-		"Email":    r.FormValue("email"),
-		"Password": r.FormValue("password"),
+		"Email":    email,
+		"Password": password,
 	}
 
 	jsonData, err := ioutil.ReadFile("users.json")
@@ -100,7 +82,39 @@ func registerHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Printf("could not write json: %s\n", err)
 		return
 	}
+}
 
+func indexHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl1 := template.Must(template.ParseFiles("templates/index.html"))
+	if r.Method != http.MethodPost {
+		tmpl1.Execute(w, nil)
+		return
+	}
+	tmpl1.Execute(w, nil)
+}
+
+func buyHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl2 := template.Must(template.ParseFiles("templates/Achat.html"))
+	tmpl2.Execute(w, nil)
+}
+
+func whoareusHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl3 := template.Must(template.ParseFiles("templates/quisommesnous.html"))
+	tmpl3.Execute(w, nil)
+}
+
+func accountHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl4 := template.Must(template.ParseFiles("templates/MonCompte.html"))
+	tmpl4.Execute(w, nil)
+}
+
+func registerHandler(w http.ResponseWriter, r *http.Request) {
+	if r.FormValue("email") != "" {
+		if alreadyregistered(r.FormValue("email")) {
+			http.Redirect(w, r, "/Erreur", http.StatusSeeOther)
+		}
+		register(r.FormValue("email"), r.FormValue("password"))
+	}
 	tmpl5 := template.Must(template.ParseFiles("templates/Inscription.html"))
 	tmpl5.Execute(w, nil)
 }
@@ -109,4 +123,14 @@ func resultHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(r.FormValue("search"))
 	tmpl6 := template.Must(template.ParseFiles("templates/Resultats.html"))
 	tmpl6.Execute(w, nil)
+}
+
+func errorHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl7 := template.Must(template.ParseFiles("templates/Erreur.html"))
+	tmpl7.Execute(w, nil)
+}
+
+type User struct {
+	Email    string
+	Password string
 }
