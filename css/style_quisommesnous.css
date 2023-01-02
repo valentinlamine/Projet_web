@@ -192,7 +192,7 @@ a:hover {
     width: 225px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border-color: blue;
+    border-color: #232429;
 }
 .message_input::placeholder {
     visibility: hidden;
@@ -226,7 +226,7 @@ a:hover {
     height: 120px;
     width: 350px;
     border-radius: 10px;
-    border-color: blue;
+    border-color: #232429;
 }
 .to-top {
     background: white;
