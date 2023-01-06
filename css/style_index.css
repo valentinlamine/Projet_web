@@ -11,6 +11,26 @@
     font-style: normal;
 }
 
+/* début scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1E1E1E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #454851;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #195FA5;
+}
+/* fin scrollbar */
+
+
 .scroll_container {
     height: 100vh;
     overflow-y: scroll;

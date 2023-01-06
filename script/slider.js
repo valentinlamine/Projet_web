@@ -13,9 +13,10 @@ let sliderPosition = 0; //the position of the slider
 
 //function to calculate the number of item displayed on the screen
 function calcItemDisplayed() {
-    itemDisplayed = Math.floor(window.innerWidth / (itemWidth + 10)); //calculate the number of item displayed on the screen
+    minimumMargin = 15; //the minimum margin of the items
+    itemDisplayed = Math.floor(window.innerWidth / (itemWidth + minimumMargin)); //calculate the number of item displayed on the screen
     margin = Math.floor(((window.innerWidth - (itemDisplayed * itemWidth)) / (itemDisplayed))/2);  //calculate the margin of the items
-    if (margin < 10) { //if the margin is too small
+    if (margin < minimumMargin) { //if the margin is too small
         itemDisplayed -= 1; //remove one item from the screen
         margin = Math.floor(((window.innerWidth - (itemDisplayed * itemWidth)) / (itemDisplayed))/2); //recalculate the margin
     }
