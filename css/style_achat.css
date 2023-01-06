@@ -11,11 +11,6 @@
     font-style: normal;
 }
 
-.body {
-    height: 100vh;
-    width: 100vw;
-}
-
 /* début scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -129,6 +124,7 @@ a:hover {
 }
 
 .search_input {
+    text-overflow: ellipsis;
     background: none;
     border: none;
     font-size: 1.6em;
@@ -207,6 +203,7 @@ input:focus {
 }
 
 .info {
+    text-overflow: ellipsis;
     width: 100%;
     height: calc(100% - 70px);
     padding-left: 15px;
@@ -215,6 +212,12 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.info p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
 }
 
 .name {
