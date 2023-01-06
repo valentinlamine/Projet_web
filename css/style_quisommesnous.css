@@ -14,8 +14,27 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 }
+
+/* début scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1E1E1E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #454851;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #195FA5;
+}
+/* fin scrollbar */
 
 /* header */
 .header {
@@ -70,165 +89,174 @@ a:hover {
 
 /*Content*/
 .content {
-    background: rgb(35,36,41);
-    background: linear-gradient(270deg, rgba(35,36,41,1) 0%, rgba(30,37,73,1) 100%);
+    background: #1E1E1E;
     display: flex;
-    height: 110%;
+    min-height: calc(100vh - 325px);
 }
-.fonde2001{
+.circle-arc{
+    background: linear-gradient(0deg, rgba(35,36,41,1) 0%, rgba(30,37,73,1) 100%);
+    padding: 20px;
+    rotate: 180deg;
+    width: 250px;
+    height: 250px;
+    border-color: black;
+    border-width: thick;
+    border-radius: 100% 0 0;
+    display: flex;
+}
+.circle-text{
+    rotate: 180deg;
+    color: white;
+    font-size: 2.4em;
+    padding-top: 20px;
+}
+.title-mobile{
     display: none;
 }
 .redcontent{
-    max-height: auto;
-    height: auto;
-    margin: 4% 2% 2% 1%;
-    border-radius: 20px;
+    margin-top: 30px;
 }
 .title-textcontent{
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 1.37em;
+    font-size: 1.4em;
     color: white;
 }
 .textcontent{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: 1.37em;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    margin-left: 3%;
+    margin-right: 3%;
     color: white;
-    line-break: auto;
-    text-align: center;
-    
+    text-align: justify;
+    text-align-last: center;
 }
-.arccircle{
-    background: rgb(35,36,41);
-    background: linear-gradient(0deg, rgba(35,36,41,1) 0%, rgba(30,37,73,1) 100%);
-    padding: 10px;
-}
-.arccircle-1{
-    rotate: 180deg;
-    width: 250px;
-    height: 250px;
-    -webkit-border-radius: 100% 0 0;
-    border-color: black;
-    border-width: thick;
-    border-radius: 100% 0 0;
-}
-.textcircle{
-    rotate: 180deg;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 2.4em;
-    padding-right: 15%;
-    padding-bottom: 52%;
+.textcontent p{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 /* Content End */
+
 /* Footer */
-.footer {
+.footer {    
     display: flex;
+    justify-content: space-around;
     background-color: #232429;
     color: #ffffff;
+    height: 250px;
+}
+.footer h2{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.footer .contactinfo {
+    /* faire fonctionner le ellipsis */
 }
 .title {
-    padding-top: 20px;
+    padding-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
-    text-align: center;
+    font-size: 1.7em;
+    text-align: center
 }
 .left {
+    height: 100%;
+    padding: 0 20px;
     max-width: 33%;
     min-width: 33%;
-    height: 100%;
 }
 .center {
+    height: 100%;
+    padding: 0 20px;
     max-width: 33%;
     min-width: 33%;
-    height: 100%;
-    border-radius: 10px;
 }
 .right {
+    height: 100%;
+    padding: 0 20px;
     max-width: 33%;
     min-width: 33%;
-    height: 100%;
 }
-.textfooter {
+.footer-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 0.9em;
-    font-size: 1.37em;
+    padding-top: 20px;
+    font-size: 1.3em;
 }
 /* Input Footer */
-.input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 40px;
-    width: 400px;
-    border-radius: 5px;
-    margin-top: 10px;
+input:focus, textarea:focus, select:focus{
+    outline: 1px solid #454851;
+    border: none;
 }
-.message {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1.6Sem;
-    font-size: 1.37em;
-    margin-top: 1.5em;
+.input {
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    background-color: #D9D9D9;
+    font-size: 1.2em;
 }
 .select_input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 22px;
-    width: 225px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border-color: #232429;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    font-size: 1em;
 }
-.message_input::placeholder {
-    visibility: hidden;
+.message_input {
+    width: 100%;
+    height: 105px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1em;
+    border-color: #232429;
+    resize: none;
+    background-color: #D9D9D9;
 }
 .contactinfo {
-    margin-top: 20px;
-    align-items: center;
+    margin-bottom: 15px;
+    text-align: center;
 }
 .buttontotop{
     display: none;
 }
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
+    font-size: 1.2em;
     background-color: #195FA5;
     color: white;
-    height: 50px;
-    width: 150px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border-color: black;
-    margin-top: 20px;
-    align-self: center;
+    border-radius: 20px;
+    padding: 10px 40px;
+    border: none;
 }
-.message_input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 120px;
-    width: 350px;
-    border-radius: 10px;
-    border-color: #232429;
+.button:hover {
+    cursor: pointer;
+    font-size: 1.25em;
 }
+.button:active {
+    transform: translateY(2px);
+}
+
+/* reprendre ici */
+
+
+
+
+
+
+
+
+
+
+
+
 .to-top {
     background: white;
     position: fixed;
@@ -252,15 +280,20 @@ a:hover {
     pointer-events: auto;
     opacity: 1;
 }
-.buttondivpc {
-    display: flex;
-    justify-content: center;
-}
 .buttondivtel{
     display: none;
 }
 /* Input Footer End */
 /* Footer End */
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 991px) {
     /* Header */
@@ -316,7 +349,7 @@ a:hover {
         height: calc(100vh - 75px - content);
         flex-direction: column;
     }
-    .fonde2001{
+    .title-mobile{
         display: block;
         display: flex;
         justify-content: center;
@@ -332,7 +365,7 @@ a:hover {
         align-items: center;
     }
     /* Circle Arc */
-    .circle{
+    .circle-arc{
         display: none;
     }
     /* Circle Arc End*/
@@ -356,7 +389,7 @@ a:hover {
         max-height: 100%;
         max-width: 100%;
     }
-    .textfooter{
+    .footer-text{
         text-align: center;
         line-break: auto;
         margin-top: 0em;

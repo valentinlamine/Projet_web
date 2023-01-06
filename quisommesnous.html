@@ -34,13 +34,13 @@
     </div>
     <div class="content">
         <div class="circle">
-            <div class="arccircle arccircle-1">
-                <div class="textcircle">
+            <div class="circle-arc">
+                <p class="circle-text">
                     Fondé en 2001
-                </div>
+                </p>
             </div>
         </div>
-        <div class="fonde2001">
+        <div class="title-mobile">
             <h1>Fondé en 2001</h1>
         </div>
         <div class="redcontent">
@@ -49,15 +49,16 @@
             </div>
             <div class="textcontent">
                 <p>
-                    Il était une fois une entreprise qui se spécialisait dans la location de véhicules de luxe. Elle avait une flotte de voitures de marques prestigieuses comme Mercedes, BMW et Audi, ainsi que de belles limousines.
-
-                    L'entreprise avait des clients fidèles qui venaient louer des véhicules pour des événements spéciaux tels que des mariages, des anniversaires de mariage ou des soirées de gala. Elle avait également une forte demande de la part de clients d'affaires qui voulaient impressionner leurs partenaires ou leurs clients en leur proposant un moyen de transport de prestige.
-                    
-                    L'entreprise avait une excellente réputation et était connue pour ses véhicules impeccables et son service client exceptionnel. Les employés étaient professionnels et aimables, et ils s'assuraient que chaque client était entièrement satisfait.
-                    
-                    Au fil des années, l'entreprise a continué à grandir et à étendre sa gamme de véhicules. Elle a ajouté des modèles haut de gamme tels que des Rolls-Royce et des Lamborghini à sa flotte, attirant encore plus de clients exigeants.
-                    
-                    La popularité de l'entreprise a continué de croître grâce à sa réputation de qualité et de service exceptionnel. Aujourd'hui, elle est considérée comme l'une des meilleures entreprises de location de véhicules de luxe du pays.
+                    YamisAuto a été fondée en 2001 par un groupe de passionnés de voitures de luxe et de collection. Ils avaient l'idée de créer une entreprise de location de voitures de prestige pour répondre à la demande croissante de clients qui voulaient louer des véhicules de qualité pour des événements spéciaux ou simplement pour se faire plaisir.
+                </p>
+                <p>
+                    Le groupe a commencé par acheter quelques voitures de luxe et de collection et a lancé YamisAuto avec un petit budget. Leur entreprise a rapidement attiré l'attention de clients à travers le pays grâce à sa sélection de véhicules de qualité et à son excellent service client.
+                </p>
+                <p>
+                    Au fil des ans, YamisAuto a continué à se développer et à s'étendre, en ajoutant de nouvelles voitures à sa flotte et en ouvrant de nouvelles succursales dans d'autres villes. L'entreprise a également lancé plusieurs initiatives innovantes pour améliorer l'expérience de ses clients, telles que la mise en place d'un système de réservation en ligne facile à utiliser et la création d'un programme de fidélité pour récompenser les clients réguliers.
+                </p>
+                <p>
+                    Aujourd'hui, YamisAuto est reconnue comme l'une des meilleures entreprises de location de voitures de luxe et de collection du pays, offrant une expérience de location de qualité supérieure à ses clients grâce à sa sélection de véhicules exceptionnels et à son service attentionné
                 </p>
             </div>
             
@@ -68,43 +69,38 @@
             <div class="title">
                 <h2>Contact</h2>
             </div>
-            <div class="textfooter">
+            <div class="footer-text">
                 <p class="contactinfo">Adresse : 1 rue de la paix, 75000 Paris</p>
                 <p class="contactinfo">Téléphone : 01 23 45 67 89</p>
-                <a class="contactinfo" href="mailto:contact@yamisauto.com?subject=Demande de contact&body=Entrez votre message ici">Nous contacter par Mail</a>
+                <form action="">
+                <button class="button buttondivpc" type="submit">Envoyer</button>
             </div>
         </div>
         <div class="center">
             <div class="title">
-                <h2>Nous contacter</h2>
+                <h2>Vos informations</h2>
             </div>
-            <div class="textfooter">
-                <form action="">
-                    <input class="input" type="text" name="name" placeholder=" Votre Nom" required>
-                    <input class="input" type="text" name="firstname" placeholder=" Votre Prénom" required>
-                    <input class="input" type="text" name="mail" placeholder=" Votre adresse mail" required>
-                    <div class="buttondivpc">
-                        <button class="button" type="submit">Envoyer</button>
-                    </div>
+            <div class="footer-text">
+                    <input class="input" type="text" name="name" placeholder="Votre Nom" required>
+                    <input class="input" type="text" name="firstname" placeholder="Votre Prénom" required>
+                    <input class="input" type="text" name="mail" placeholder="Votre adresse mail" required>
             </div>
         </div>
         <div class="right">
             <div class="title">
                 <h2>Votre message</h2>
             </div>
-            <div class="textfooter">
+            <div class="footer-text">
                 <select class="select_input" name="message" id="message" required>
                     <option value="">Sélectionnez un type de message</option>
-                    <option value="message">Support</option>
+                    <option value="support">Support</option>
                     <option value="question">Question</option>
-                    <option value="suggestion">Contact</option>
                     <option value="suggestion">Suggestion</option>
                     <option value="autre">Autre</option>
+                </select>
                 <textarea class="message_input" type="text" name="message" placeholder="Entrez votre message" required></textarea>
-                <div class="buttondivtel">
-                    <button class="button" type="submit">Envoyer</button>
-                </div>
-            </form>
+                <button class="button buttondivtel" type="submit">Envoyer</button>
+                </form>
             </div>
         </div>
         <button class="buttontotop" onclick="window.location.href='#top'">ᐱ Retour en Haut ᐱ</button>
