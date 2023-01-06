@@ -67,6 +67,7 @@ a:hover {
     color: #195FA5;
 }
 /* Header End */
+
 /*Content*/
 .content {
     background: rgb(35,36,41);
@@ -388,6 +389,4 @@ a:hover {
         margin-top: 20px;
         align-self: center;
     }
-    /* Input End */
-    /* Footer End */;
 }
