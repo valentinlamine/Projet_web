@@ -10,7 +10,6 @@ let margin = 0; //the margin of the items
 let sliderWidth = 0; //the width of the slider
 let sliderPosition = 0; //the position of the slider
 
-
 //function to calculate the number of item displayed on the screen
 function calcItemDisplayed() {
     minimumMargin = 15; //the minimum margin of the items
@@ -32,7 +31,6 @@ function calcItemDisplayed() {
         btnPrev.style.display = "block";
         btnNext.style.display = "block";
     }
-
 }
 
 //function to calculate the width of the slider
@@ -87,6 +85,7 @@ function init() {
         next();
     }
 }
+
 //call the init function when the page is loaded
 window.addEventListener('load', init);
 
