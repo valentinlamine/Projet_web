@@ -5,6 +5,7 @@
     background-color: #232429;
     color: #ffffff;
     height: 250px;
+    width: 100%;
 }
 .footer h2{
     text-overflow: ellipsis;
@@ -117,6 +118,9 @@ input, textarea, select {
     .footer{
         flex-direction: column;
         height: auto;
+    }
+    .contactinfo {
+        white-space: normal;
     }
     .left{
         max-width: 100%;

@@ -11,6 +11,20 @@
     font-style: normal;
 }
 
+/* début gestion container */
+.scroll_container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll_section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+/* fin gestion container */
+
 /* début scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -30,19 +44,7 @@
 }
 /* fin scrollbar */
 
-
-.scroll_container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-.scroll_section {
-    height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
-
+/* début premier container */
 .first_content {
     background-image: url("../images/index_background.png");
     background-size: cover;
@@ -106,8 +108,9 @@
 input:focus {
     outline: none;
 }
+/* fin premier container */
 
-/* Second part of the page */
+/* début deuxième container */
 .second_section {
     object-fit: cover;
     object-position: center;
@@ -117,6 +120,15 @@ input:focus {
     flex-direction: column;
     height: 100vh;
     background-color: #1E1E1E;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .arrow_top {
@@ -130,8 +142,7 @@ input:focus {
     color: #ffffff;
 }
 
-/* Slider */
-
+/* début slider */
 .slider-container {
     position: relative;
     width: 100%;
@@ -141,6 +152,7 @@ input:focus {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    margin: 50px 0px;
 }
 
 .slider-width {
@@ -223,34 +235,89 @@ input:focus {
     cursor: pointer;
     z-index: 1;
 }
-
-
-
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 100%;
-    background-color: #232429;
+.slider-mobile {
+    display: none;
 }
-
-
-
-
-
-
-
-
-
-
+/* fin slider */
+/* fin deuxième container */
 
 @media screen and (max-width: 991px) {
+    /* début gestion container */
+    .scroll_container {
+        height: 100%;
+        overflow-y: auto;
+        scroll-snap-type: none;
+    }
+    .scroll_section {
+        height: 100%;
+        scroll-snap-align: none;
+        scroll-snap-stop: none;
+    }
+    /* fin gestion container */
+    /* début premier container */
    .title {
         font-size: 2.5em;
     }
     .search_bar {
         width: 80%;
     }
+    /* fin premier container */
+    /* début deuxième container */
+    .second_section .title {
+        margin: 20px 0;
+    }
+    /* début slider */
+    .slider-container {
+        margin: 20px 0;
+    }
+    .btn {
+        margin: 0 10px;
+    }
+    /* fin slider */
+    /* fin deuxième container */
+}
+
+@media screen and (max-width: 500px) {
+    /* début slider */
+    .slider-width {
+        display: none;
+    }
+    .slider-container {
+        height: 100%;
+    }
+    .slider-mobile {
+        color: white;
+        display: flex;
+        text-align: center;
+        height: 100%;
+    }
+}
+
+/* media querry pour les écrans pas asser haut */
+@media screen and (max-height: 800px) {
+    /* début gestion container */
+    .scroll_container {
+        height: 100%;
+        overflow-y: auto;
+        scroll-snap-type: none;
+    }
+    .scroll_section {
+        height: 100%;
+        scroll-snap-align: none;
+        scroll-snap-stop: none;
+    }
+    /* fin gestion container */
+    /* début premier container */
+    .title {
+        font-size: 2.5em;
+    }
+    /* fin premier container */
+    /* début deuxième container */
+    .content {
+        min-height: 100vh;
+    }
+    .second_section .title {
+        margin: 20px 0;
+    }
+    
 }
