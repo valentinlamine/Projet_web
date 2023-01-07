@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_index.css">
     <link rel="stylesheet" href="css/style_header.css">
+    <link rel="stylesheet" href="css/style_footer.css">
     <link rel="icon" href="logo.ico" />
     <title>YamisAuto</title>
 </head>
@@ -110,8 +111,48 @@
                 <a class="btn btn-next" onclick="next()"> <img src="images/arrow_right.svg" alt="arrow-right"></a>
                 <script src="script/slider.js"></script>
             </div>
-            <div class="footer">
-                <p>salut</p>
+            <div class ="footer">
+                <div class="left">
+                    <div class="footer-title">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="footer-text">
+                        <p class="contactinfo">Adresse : 1 rue de la paix, 75000 Paris</p>
+                        <p class="contactinfo">Téléphone : 01 23 45 67 89</p>
+                        <p class="contactinfo">© 2022 YamisAuto</p>
+                        <form action="">
+                        <button class="button buttondivpc" type="submit">Envoyer</button>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="footer-title">
+                        <h2>Vos informations</h2>
+                    </div>
+                    <div class="footer-text">
+                            <input class="input" type="text" name="name" placeholder="Votre Nom" required>
+                            <input class="input" type="text" name="firstname" placeholder="Votre Prénom" required>
+                            <input class="input" type="text" name="mail" placeholder="Votre adresse mail" required>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="footer-title">
+                        <h2>Votre message</h2>
+                    </div>
+                    <div class="footer-text">
+                        <select class="select_input" name="message" id="message" required>
+                            <option value="">Sélectionnez un type de message</option>
+                            <option value="support">Support</option>
+                            <option value="question">Question</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <textarea class="message_input" type="text" name="message" placeholder="Entrez votre message" required></textarea>
+                        <button class="button buttondivtel" type="submit">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+                <a class="button-to-top">ᐱ Retour en Haut ᐱ</a>
+                <script src="script/scroll-to-top.js"></script>
             </div>
         </div>
     </div>
