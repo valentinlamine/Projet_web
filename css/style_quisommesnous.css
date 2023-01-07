@@ -113,7 +113,7 @@ a:hover {
 .title-mobile{
     display: none;
 }
-.redcontent{
+.text {
     margin-top: 30px;
 }
 .title-textcontent{
@@ -153,9 +153,6 @@ a:hover {
     overflow: hidden;
     white-space: nowrap;
 }
-.footer .contactinfo {
-    /* faire fonctionner le ellipsis */
-}
 .title {
     padding-top: 15px;
     display: flex;
@@ -194,6 +191,11 @@ input:focus, textarea:focus, select:focus{
     outline: 1px solid #454851;
     border: none;
 }
+input, textarea, select {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .input {
     height: 40px;
     width: 100%;
@@ -222,11 +224,12 @@ input:focus, textarea:focus, select:focus{
     background-color: #D9D9D9;
 }
 .contactinfo {
-    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 10px;
     text-align: center;
-}
-.buttontotop{
-    display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .button {
     font-size: 1.2em;
@@ -243,57 +246,14 @@ input:focus, textarea:focus, select:focus{
 .button:active {
     transform: translateY(2px);
 }
-
-/* reprendre ici */
-
-
-
-
-
-
-
-
-
-
-
-
-.to-top {
-    background: white;
-    position: fixed;
-    bottom: 16px;
-    right: 32px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    color: #1f1f1f;
-    text-decoration: none;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .4s;
-}
-.to-top.active {
-    bottom: 32px;
-    pointer-events: auto;
-    opacity: 1;
-}
 .buttondivtel{
+    display: none;
+}
+.button-to-top {
     display: none;
 }
 /* Input Footer End */
 /* Footer End */
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 991px) {
     /* Header */
@@ -346,7 +306,6 @@ input:focus, textarea:focus, select:focus{
     /* Header End */
     /* Content */
     .content{
-        height: calc(100vh - 75px - content);
         flex-direction: column;
     }
     .title-mobile{
@@ -356,13 +315,7 @@ input:focus, textarea:focus, select:focus{
         padding: 20px;
         font-size: 1.5em;
         color: white;
-    }
-    .redcontent {
-        flex-direction: column;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background: linear-gradient(180deg, rgba(35,36,41,1) 0%, rgba(30,37,73,1) 100%);
     }
     /* Circle Arc */
     .circle-arc{
@@ -372,54 +325,39 @@ input:focus, textarea:focus, select:focus{
     /* Content End */
     /* Footer */
     .footer{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        height: 100%;
+        height: auto;
     }
     .left{
-        max-height: 100%;
         max-width: 100%;
     }
     .center{
-        max-height: 100%;
         max-width: 100%;
     }
     .right{
-        max-height: 100%;
         max-width: 100%;
-    }
-    .footer-text{
-        text-align: center;
-        line-break: auto;
-        margin-top: 0em;
-
     }
     /* Input */
     .buttondivpc{
         display: none;
     }
     .buttondivtel{
-        display: flex;
-    }
-    .buttontotop {
-        border: none;
-        background-color: rgb(45, 46, 52);
-        width: 100%;
-        font-size: 2em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: auto;
-        cursor: pointer;
-        color: white;
+        display: block;
+        margin: 20px 0px;
     }
     .input{
         width: 100%;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        border-color: black;
-        margin-top: 20px;
-        align-self: center;
+    }
+    .button-to-top {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(180deg, rgba(35,36,41,1) 0%, rgba(30,37,73,1) 100%);
+        color: white;
+        font-size: 1.6em;
+        padding: 20px;
+    }
+    .button-to-top:hover {
+        cursor: pointer;
     }
 }
