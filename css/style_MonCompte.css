@@ -176,3 +176,45 @@ a:hover {
     }
 
 }
+
+/* Responsive Height début */
+
+
+@media screen and (max-height: 690px) {
+    .inputs {
+        width: 100%;
+    }
+
+    .square {
+        height: 90%;
+        width: 60%;
+        margin: 0px;
+    }
+
+    .href a {
+        padding-bottom: 15px;
+    }
+
+    .param{
+        width: 50%;
+    }
+
+    .inputs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .PetiteDiv {
+        display: flex;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+
+    .login {
+        font-size: 1.7em;
+    }
+
+
+}
