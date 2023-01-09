@@ -97,7 +97,6 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func AchatHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Println(cars[0].Brand)
 	tmpl2 := template.Must(template.ParseFiles("templates/Achat.html"))
 	tmpl2.Execute(w, cars)
 }
@@ -140,6 +139,7 @@ type User struct {
 }
 
 type Car struct {
+	Image      string
 	Brand      string
 	Engine     string
 	Kilometers int
@@ -151,6 +151,7 @@ type Car struct {
 // declaration des voitures
 var cars = []Car{
 	{
+		Image:      "https://www.automobile-propre.com/wp-content/uploads/2018/10/audi-e-tron-2019-1.jpg",
 		Brand:      "Audi",
 		Engine:     "Diesel",
 		Kilometers: 100000,
@@ -159,11 +160,39 @@ var cars = []Car{
 		Price:      5000,
 	},
 	{
+		Image:      "https://www.automobile-propre.com/wp-content/uploads/2018/10/audi-e-tron-2019-1.jpg",
 		Brand:      "Audi",
 		Engine:     "Diesel",
 		Kilometers: 100000,
 		MaxSpeed:   200,
 		Year:       2010,
 		Price:      50,
+	},
+	{
+		Image:      "/images/car_1.png",
+		Brand:      "Audi",
+		Engine:     "Diesel",
+		Kilometers: 100000,
+		MaxSpeed:   200,
+		Year:       2010,
+		Price:      5000,
+	},
+	{
+		Image:      "/images/car_1.png",
+		Brand:      "Audi",
+		Engine:     "Diesel",
+		Kilometers: 100000,
+		MaxSpeed:   200,
+		Year:       2010,
+		Price:      5000,
+	},
+	{
+		Image:      "/images/car_1.png",
+		Brand:      "Audi",
+		Engine:     "Diesel",
+		Kilometers: 100000,
+		MaxSpeed:   200,
+		Year:       2010,
+		Price:      5000,
 	},
 }

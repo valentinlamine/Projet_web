@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YamisAuto | Achat</title>
 </head>
 <body>
     <div class="header">
@@ -45,21 +45,23 @@
             </div>
         </form>
         <div class="cards">
+            {{range .}}
             <div class="item">
-                <img src="images/car_1.png" alt="ford mustang">
+                <img src={{.Image}} alt="ford mustang">
                 <div class = "bottom-item">
                     <div class="info">
                         <div class="firstgroup">
-                            <p class="name">Audi</p>
-                            <p class="km">100 000Km</p>
+                            <p class="name">{{.Brand}}</p>
+                            <p class="km">{{.Kilometers}} KM</p>
                         </div>
-                        <p class="price">5 000€</p>
+                        <p class="price">{{.Price}} €</p>
                     </div>
                     <div class="details">
                         <p>Voir plus de détails</p>
                     </div>
                 </div>
-            </div>  
+            </div> 
+            {{end}} 
         </div>
     </div>
     <div class ="footer">
