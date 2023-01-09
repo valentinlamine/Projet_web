@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="css/style_header.css">
+    <link rel="stylesheet" href="css/style_footer.css">
+    <link rel="stylesheet" href="/css/style_MonCompte.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo.ico" />
+    <title>Mon Compte</title>
+</head>
+<body>
+    <!-- <p style="background-image: url('/images/unknown.png');"></p> -->
+    <div class="header">
+        <div class="logo">
+            <a href="/" class="logo">
+            <img src="/images/logo.svg" alt="logo">
+            <p>YamisAuto</p>
+            </a>
+        </div>
+        <div class="lien">
+            <input class="menu_button" type="checkbox" id="menu_button">
+            <label for="menu_button">
+                <img src="/images/menu.svg" alt="menu" class="burger">
+                <img src="/images/close.svg" alt="close" class="close">
+            </label>
+            <nav class="menu">
+                <ul>
+                <li><a href="/Achat">Achat</a></li>
+                <li><a href="/">Location</a></li>
+                <li><a href="/QuiSommesNous">Qui sommes nous</a></li>
+                <li><a href="/MonCompte">Mon compte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class = "WhithoutHeader">
+        <div class = "square" >
+            <div class = "form_box">
+                <label class = "title">Inscription</label>
+                <form class = "form" action="/Inscription" method="post">
+                    <div class = "div-form">
+                        <div class="inputs">
+                            <input class ="param" type="email" name="email" placeholder="E-mail">
+                            <input class ="param" type="password" name="password" placeholder="Mot de passe">
+                        </div>
+                        <input class = "login" type="submit" value="S'inscrire">
+                    </div>
+                </form>
+            </div>
+            <div class = "href">
+                <a href="/">Retour à l'accueil</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
