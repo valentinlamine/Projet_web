@@ -97,8 +97,9 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func AchatHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Println(cars[0].Brand)
 	tmpl2 := template.Must(template.ParseFiles("templates/Achat.html"))
-	tmpl2.Execute(w, nil)
+	tmpl2.Execute(w, cars)
 }
 
 func QuiSommesNousHandler(w http.ResponseWriter, r *http.Request) {
@@ -136,4 +137,33 @@ func ErreurHandler(w http.ResponseWriter, r *http.Request) {
 type User struct {
 	Email    string
 	Password string
+}
+
+type Car struct {
+	Brand      string
+	Engine     string
+	Kilometers int
+	MaxSpeed   int
+	Year       int
+	Price      int
+}
+
+// declaration des voitures
+var cars = []Car{
+	{
+		Brand:      "Audi",
+		Engine:     "Diesel",
+		Kilometers: 100000,
+		MaxSpeed:   200,
+		Year:       2010,
+		Price:      5000,
+	},
+	{
+		Brand:      "Audi",
+		Engine:     "Diesel",
+		Kilometers: 100000,
+		MaxSpeed:   200,
+		Year:       2010,
+		Price:      50,
+	},
 }
