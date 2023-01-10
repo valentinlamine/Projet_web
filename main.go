@@ -31,7 +31,7 @@ func main() {
 	http.ListenAndServe(":80", nil)
 }
 func alreadyregistered(email string) bool {
-	jsonData, err := ioutil.ReadFile("users.json")
+	jsonData, err := ioutil.ReadFile("json/users.json")
 	if err != nil {
 		fmt.Printf("could not marshal json: %s\n", err)
 		return false
@@ -56,7 +56,7 @@ func register(email string, password string) {
 		"Password": password,
 	}
 
-	jsonData, err := ioutil.ReadFile("users.json")
+	jsonData, err := ioutil.ReadFile("json/users.json")
 	if err != nil {
 		fmt.Printf("could not marshal json: %s\n", err)
 		return
@@ -80,7 +80,7 @@ func register(email string, password string) {
 		return
 	}
 	//écrire les données dans le fichier json
-	err = ioutil.WriteFile("users.json", jsonData, 0644)
+	err = ioutil.WriteFile("json/users.json", jsonData, 0644)
 	if err != nil {
 		fmt.Printf("could not write json: %s\n", err)
 		return
