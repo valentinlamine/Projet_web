@@ -151,7 +151,7 @@ type Car struct {
 // declaration des voitures
 var cars = []Car{
 	{
-		Image:      "https://www.automobile-propre.com/wp-content/uploads/2018/10/audi-e-tron-2019-1.jpg",
+		Image:      "/images/car_1.png",
 		Brand:      "Audi",
 		Engine:     "Diesel",
 		Kilometers: 100000,
@@ -160,7 +160,7 @@ var cars = []Car{
 		Price:      5000,
 	},
 	{
-		Image:      "https://www.automobile-propre.com/wp-content/uploads/2018/10/audi-e-tron-2019-1.jpg",
+		Image:      "/images/car_1.png",
 		Brand:      "Audi",
 		Engine:     "Diesel",
 		Kilometers: 100000,
