@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url("../images/unknown.png");
+    background-image: url(/images/unknown.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -48,6 +48,16 @@ a, label {
 
 a:hover {
     color: #195FA5;
+}
+
+.login a:hover{
+    color: #ffffff;
+}
+
+.login:hover {
+    transform: scale(1);
+    transition: 0.4s ease;
+
 }
 
 .WhithoutHeader {
@@ -115,6 +125,7 @@ a:hover {
     font-family: 'Roboto', sans-serif;
     padding: 7px 10px;
     cursor: pointer;
+    transform: scale(0.9);
 }
 
 .login:active {
@@ -130,6 +141,27 @@ a:hover {
     font-size: 2.5em;
     font-weight: 700;
     color: white;
+}
+
+.titleErreur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: white;
+}
+
+.text {
+    text-align: center;
+    font-size: larger;
+    font-weight: 200;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
 }
 
 .links {
