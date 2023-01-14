@@ -32,106 +32,106 @@
         "Engine": "ELECTRIC 1200",
         "Kilometers": "3 750",
         "MaxSpeed": 370,
-        "Year": 0,
-        "Price": 0
+        "Year": 2019,
+        "Price": "2 100 000"
     },
     {
         "Image": "/images/location/lykan.png",
-        "Brand": "",
+        "Brand": "Lykan HyperSport",
         "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0 
+        "Kilometers": "2 300",
+        "MaxSpeed": 400,
+        "Year": 2017,
+        "Price": "3 500 000" 
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0
+        "Image": "/images/location/maybachgls.png",
+        "Brand": "Maybach GLS",
+        "Engine": "V10 4L 600",
+        "Kilometers": "23 000",
+        "MaxSpeed": 315,
+        "Year": 2019,
+        "Price": "220 000"
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0
+        "Image": "/images/location/autobiography.png",
+        "Brand": "Range Rover Autobiography",
+        "Engine": "V6 5L",
+        "Kilometers": "12 000",
+        "MaxSpeed": 250,
+        "Year": 2021,
+        "Price": "162 000"
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-         "Price": 0
+        "Image": "/images/location/discovery.png",
+        "Brand": "Land Rover Discovery",
+        "Engine": "V6 5L",
+        "Kilometers": "15 000",
+        "MaxSpeed": 230,
+        "Year": 2018,
+         "Price": "60 000"
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0 
+        "Image": "/images/location/quadrifoglio.png",
+        "Brand": "Alfa Romeo Stelvio Quadrifoglio",
+        "Engine": "V10 7L 800",
+        "Kilometers": "3 120",
+        "MaxSpeed": 300,
+        "Year": 2016,
+        "Price": "80 000"
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0 
+        "Image": "/images/location/rs7.png",
+        "Brand": "Audi RS7 Sportback",
+        "Engine": "V6 5L",
+        "Kilometers": "10 000",
+        "MaxSpeed": 280,
+        "Year": 2019,
+        "Price": "100 000" 
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0
+        "Image": "/images/location/series8.png",
+        "Brand": "BMW 8 Series",
+        "Engine": "V10 4L 600",
+        "Kilometers": "23 000",
+        "MaxSpeed": 315,
+        "Year": 2019,
+        "Price": "220 000"
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0 
+        "Image": "/images/location/amggt.png",
+        "Brand": "Mercedes-Benz AMG GT",
+        "Engine": "V10 4L 600",
+        "Kilometers": "13 000",
+        "MaxSpeed": 315,
+        "Year": 2019,
+        "Price": "420 000" 
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0
+        "Image": "/images/location/panamera.png",
+        "Brand": "Porsche Panamera",
+        "Engine": "V10 4L 600",
+        "Kilometers": "3 000",
+        "MaxSpeed": 315,
+        "Year": 2019,
+        "Price": "520 000"
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0
+        "Image": "/images/location/cullinan.png",
+        "Brand": "Rolls-Royce Cullinan",
+        "Engine": "V10 4L 600",
+        "Kilometers": "3 000",
+        "MaxSpeed": 315,
+        "Year": 2019,
+        "Price": "162 000"
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0
+        "Image": "/images/location/continentalgt.png",
+        "Brand": "Bentley Continental GT",
+        "Engine": "V10 4L 600",
+        "Kilometers": "3 000",
+        "MaxSpeed": 315,
+        "Year": 2019,
+        "Price": "530 000"
     }
 ]
