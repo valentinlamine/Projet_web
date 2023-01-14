@@ -56,12 +56,53 @@
                         </div>
                         <p class="price">{{.Price}} €</p>
                     </div>
-                    <div class="details">
+                    <div class="details" onclick="openPopUp(this)">
                         <p>Voir plus de détails</p>
                     </div>
                 </div>
-            </div> 
-            {{end}} 
+            </div>
+            <div class="pop-up-blur">
+                <div class="pop-up">
+                    <img src="images/car_1.png" alt="ford mustang">
+                    <div class="bottom-pop-up">
+                        <p>Fiche technique</p>
+                        <div class="main-info-pop-up">
+                            <div class="first-line">
+                                <h1>{{.Brand}}</h1>
+                                <h1>{{.Price}} €</h1>
+                            </div>
+                            <div class="second-line">
+                                <p>{{.Kilometers}} KM</p>
+                                <p>{{.Year}}</p>
+                            </div>
+                        </div>
+                        <div class="secondary-info-pop-up">
+                            <p>Moteur : <span class="bolder">{{.Engine}}</span></p>
+                            <p>Vitesse de pointe : <span class="bolder">{{.MaxSpeed}} km/h</span></p>
+                        </div>
+                        <input class="button" type="submit" value="Fermer" onclick="closePopUp(this)">
+                    </div>
+                </div> 
+            </div>
+            {{end}}
+            <script>
+                function openPopUp(element) {
+                    element = element.parentElement.parentElement;
+                    console.log(element.nextElementSibling);
+                    element.nextElementSibling.style.display = "flex";
+                    //element.style.display = "none";
+                    //element.nextElementSibling.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+
+                }
+                function closePopUp(element) {
+                    element = element.parentElement.parentElement.parentElement;
+                    console.log(element);
+                    element.style.display = "none";
+                    //element.previousElementSibling.style.display = "flex";
+                    //element.previousElementSibling.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+
+                }
+            </script> 
         </div>
     </div>
     <div class ="footer">
