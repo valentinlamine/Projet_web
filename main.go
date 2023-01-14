@@ -24,9 +24,8 @@ func main() {
 	http.HandleFunc("/", IndexHandler)
 	http.HandleFunc("/Achat", AchatHandler)
 	http.HandleFunc("/QuiSommesNous", QuiSommesNousHandler)
-	http.HandleFunc("/MonCompte", MonCompteHandler)
+	http.HandleFunc("/Connexion", MonCompteHandler)
 	http.HandleFunc("/Inscription", InscriptionHandler)
-	http.HandleFunc("/Resultats", ResultatHandler)
 	http.HandleFunc("/Erreur", ErreurHandler)
 	http.ListenAndServe(":80", nil)
 }
@@ -98,7 +97,6 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
 func AchatHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl2 := template.Must(template.ParseFiles("templates/Achat.html"))
-	//décode la liste de voiture présente dans le fichier json puis l'envoie à la page html
 	jsonData, err := ioutil.ReadFile("json/achat.json")
 	if err != nil {
 		fmt.Printf("could not marshal json: %s\n", err)
@@ -119,7 +117,7 @@ func QuiSommesNousHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func MonCompteHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl4 := template.Must(template.ParseFiles("templates/MonCompte.html"))
+	tmpl4 := template.Must(template.ParseFiles("templates/Connexion.html"))
 	tmpl4.Execute(w, nil)
 }
 
@@ -127,17 +125,12 @@ func InscriptionHandler(w http.ResponseWriter, r *http.Request) {
 	if r.FormValue("email") != "" {
 		if alreadyregistered(r.FormValue("email")) {
 			http.Redirect(w, r, "/Erreur", http.StatusSeeOther)
+			return
 		}
 		register(r.FormValue("email"), r.FormValue("password"))
 	}
 	tmpl5 := template.Must(template.ParseFiles("templates/Inscription.html"))
 	tmpl5.Execute(w, nil)
-}
-
-func ResultatHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Println(r.FormValue("search"))
-	tmpl6 := template.Must(template.ParseFiles("templates/Resultats.html"))
-	tmpl6.Execute(w, nil)
 }
 
 func ErreurHandler(w http.ResponseWriter, r *http.Request) {
