@@ -20,6 +20,9 @@ func main() {
 	//gestion js
 	script := http.FileServer(http.Dir("script"))
 	http.Handle("/script/", http.StripPrefix("/script/", script))
+	//gestion audio
+	audio := http.FileServer(http.Dir("audio"))
+	http.Handle("/audio/", http.StripPrefix("/audio/", audio))
 	//gestion html
 	http.HandleFunc("/", IndexHandler)
 	http.HandleFunc("/Achat", AchatHandler)
