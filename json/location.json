@@ -6,7 +6,7 @@
         "Kilometers": "20",
         "MaxSpeed": 420,
         "Year": 2022,
-        "Price": "3 900 000"
+        "Price": "108 300"
     },
     {
         "Image": "/images/location/chiron.png",
@@ -15,7 +15,7 @@
         "Kilometers": "4 720",
         "MaxSpeed": 470,
         "Year": 2005,
-        "Price": "5 250 000"
+        "Price": "145 830"
     },
     {
         "Image": "/images/location/huayra.png",
@@ -24,7 +24,7 @@
         "Kilometers": "1 340",
         "MaxSpeed": 390,
         "Year": 2023,
-        "Price": "2 500 000"
+        "Price": "69 440"
     },
     {
         "Image": "/images/location/rimac.png",
@@ -33,7 +33,7 @@
         "Kilometers": "3 750",
         "MaxSpeed": 370,
         "Year": 2019,
-        "Price": "2 100 000"
+        "Price": "58 330"
     },
     {
         "Image": "/images/location/lykan.png",
@@ -42,7 +42,7 @@
         "Kilometers": "2 300",
         "MaxSpeed": 400,
         "Year": 2017,
-        "Price": "3 500 000" 
+        "Price": "97 220" 
     },
     {
         "Image": "/images/location/maybachgls.png",
@@ -51,7 +51,7 @@
         "Kilometers": "23 000",
         "MaxSpeed": 315,
         "Year": 2019,
-        "Price": "220 000"
+        "Price": "6 100"
     },
     {
         "Image": "/images/location/autobiography.png",
@@ -60,7 +60,7 @@
         "Kilometers": "12 000",
         "MaxSpeed": 250,
         "Year": 2021,
-        "Price": "162 000"
+        "Price": "4 500"
     },
     {
         "Image": "/images/location/discovery.png",
@@ -69,7 +69,7 @@
         "Kilometers": "15 000",
         "MaxSpeed": 230,
         "Year": 2018,
-         "Price": "60 000"
+         "Price": "1 600"
     },
     {
         "Image": "/images/location/quadrifoglio.png",
@@ -78,7 +78,7 @@
         "Kilometers": "3 120",
         "MaxSpeed": 300,
         "Year": 2016,
-        "Price": "80 000"
+        "Price": "2 300"
     },
     {
         "Image": "/images/location/rs7.png",
@@ -87,7 +87,7 @@
         "Kilometers": "10 000",
         "MaxSpeed": 280,
         "Year": 2019,
-        "Price": "100 000" 
+        "Price": "2 700" 
     },
     {
         "Image": "/images/location/series8.png",
@@ -96,7 +96,7 @@
         "Kilometers": "23 000",
         "MaxSpeed": 315,
         "Year": 2019,
-        "Price": "220 000"
+        "Price": "6 100"
     },
     {
         "Image": "/images/location/amggt.png",
@@ -105,7 +105,7 @@
         "Kilometers": "13 000",
         "MaxSpeed": 315,
         "Year": 2019,
-        "Price": "420 000" 
+        "Price": "11 600" 
     },
     {
         "Image": "/images/location/panamera.png",
@@ -114,7 +114,7 @@
         "Kilometers": "3 000",
         "MaxSpeed": 315,
         "Year": 2019,
-        "Price": "520 000"
+        "Price": "14 400"
     },
     {
         "Image": "/images/location/cullinan.png",
@@ -123,7 +123,7 @@
         "Kilometers": "3 000",
         "MaxSpeed": 315,
         "Year": 2019,
-        "Price": "162 000"
+        "Price": "4 500"
     },
     {
         "Image": "/images/location/continentalgt.png",
@@ -132,6 +132,6 @@
         "Kilometers": "3 000",
         "MaxSpeed": 315,
         "Year": 2019,
-        "Price": "530 000"
+        "Price": "14 720"
     }
 ]

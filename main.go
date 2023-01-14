@@ -26,6 +26,7 @@ func main() {
 	//gestion html
 	http.HandleFunc("/", IndexHandler)
 	http.HandleFunc("/Achat", AchatHandler)
+	http.HandleFunc("/Location", LocationHandler)
 	http.HandleFunc("/QuiSommesNous", QuiSommesNousHandler)
 	http.HandleFunc("/Connexion", MonCompteHandler)
 	http.HandleFunc("/Inscription", InscriptionHandler)
@@ -101,6 +102,22 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 func AchatHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl2 := template.Must(template.ParseFiles("templates/Achat.html"))
 	jsonData, err := ioutil.ReadFile("json/achat.json")
+	if err != nil {
+		fmt.Printf("could not marshal json: %s\n", err)
+		return
+	}
+	var Cars []Car
+	err = json.Unmarshal(jsonData, &Cars)
+	if err != nil {
+		fmt.Printf("could not unmarshal json: %s\n", err)
+		return
+	}
+	tmpl2.Execute(w, Cars)
+}
+
+func LocationHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl2 := template.Must(template.ParseFiles("templates/Location.html"))
+	jsonData, err := ioutil.ReadFile("json/location.json")
 	if err != nil {
 		fmt.Printf("could not marshal json: %s\n", err)
 		return
