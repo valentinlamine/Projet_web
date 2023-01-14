@@ -133,14 +133,5 @@
         "MaxSpeed": 0,
         "Year": 0,
         "Price": "0"
-    },
-    {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": "0",
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": "0"
     }
 ]
