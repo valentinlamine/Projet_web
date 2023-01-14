@@ -207,7 +207,6 @@ input:focus {
     display: none;
 }
 
-
 .pop-up {
     position: absolute;
     top: 50%;
@@ -271,6 +270,14 @@ input:focus {
     font-weight: 700;
 }
 
+/* select the first h1 in the main-info-pop-up div */
+.main-info-pop-up .first-line h1:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+}
+
 .main-info-pop-up .second-line {
     display: flex;
     justify-content: space-between;
@@ -319,7 +326,36 @@ input:focus {
     }
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 2em;
+    }
+    .search_bar {
+        width: 90%;
+    }
+    .main-info-pop-up .first-line {
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    p {
+        text-align: center;
+        font-size: 1em;
+    }
+    .main-info-pop-up .first-line h1:first-child {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: visible;
+        margin-right: 0;
+    }
+    
+}
+
+@media screen and (max-height: 850px) {
     .pop-up-blur {
         height: 100vh;
     }
@@ -336,5 +372,12 @@ input:focus {
     }
     .bottom-pop-up {
         height: 100%;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .pop-up {
+        height: 100vh;
+        top: 0;
     }
 }
