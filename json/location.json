@@ -1,0 +1,147 @@
+[
+    {
+        "Image": "/images/car_1.png",
+        "Brand": "Mercedes-Benz S-Class",
+        "Engine": "300 hybride",
+        "Kilometers": 100000,
+        "MaxSpeed": 250,
+        "Year": 2022,
+        "Price": 150000
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0 
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+         "Price": 0
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0 
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0 
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0 
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0
+    },
+    {
+        "Image": "",
+        "Brand": "",
+        "Engine": "",
+        "Kilometers": 0,
+        "MaxSpeed": 0,
+        "Year": 0,
+        "Price": 0
+    },
+
+]

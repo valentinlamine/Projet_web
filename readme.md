@@ -23,10 +23,10 @@ Matéo - Mise en place d'un version adaptative du site pour mobile sur les 2 pag
 
 Partie Backend :
 
-Matéo - Création de la base de donnée  
+Matéo - Création de la base de donnée pour  
 Matéo - Création     
 
-Valentin - 
+Valentin - Création des fichier java script pour le bon fonctionnement du site.
 
 # Organisation des dossiers
 
@@ -55,7 +55,7 @@ D'autant plus que le header et le footer sont les mêmes pour toutes les pages.
 
 - Le dossier [json](json) permet de stocker les données comme par éxemples les données de connection avec l'adresse mail et le mot de passe.
 
-- Le dossier [script](script) contient les fichiers JavaScript du site. Comme par éxemple le fichier [script.js](script/script.js) qui permet de faire fonctionner le slider de la page [Index.html](templates/index.html).
+- Le dossier [script](script) contient les fichiers JavaScript du site. Comme par exemple le fichier [script.js](script/script.js) qui permet de faire fonctionner le slider de la page [Index.html](templates/index.html).  
 
 
   
