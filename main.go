@@ -152,12 +152,12 @@ type Car struct {
 var cars = []Car{
 	{
 		Image:      "/images/car_1.png",
-		Brand:      "Audi",
-		Engine:     "Diesel",
+		Brand:      "Mercedes-Benz S-Class",
+		Engine:     "300 hybride",
 		Kilometers: 100000,
-		MaxSpeed:   200,
-		Year:       2010,
-		Price:      5000,
+		MaxSpeed:   250,
+		Year:       2022,
+		Price:      150000,
 	},
 	{
 		Image:      "/images/car_1.png",
