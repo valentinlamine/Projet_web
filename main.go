@@ -98,7 +98,19 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
 func AchatHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl2 := template.Must(template.ParseFiles("templates/Achat.html"))
-	tmpl2.Execute(w, nil)
+	//décode la liste de voiture présente dans le fichier json puis l'envoie à la page html
+	jsonData, err := ioutil.ReadFile("json/achat.json")
+	if err != nil {
+		fmt.Printf("could not marshal json: %s\n", err)
+		return
+	}
+	var Cars []Car
+	err = json.Unmarshal(jsonData, &Cars)
+	if err != nil {
+		fmt.Printf("could not unmarshal json: %s\n", err)
+		return
+	}
+	tmpl2.Execute(w, Cars)
 }
 
 func QuiSommesNousHandler(w http.ResponseWriter, r *http.Request) {

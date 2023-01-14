@@ -80,7 +80,7 @@
                             <p>Moteur : <span class="bolder">{{.Engine}}</span></p>
                             <p>Vitesse de pointe : <span class="bolder">{{.MaxSpeed}} km/h</span></p>
                         </div>
-                        <input class="button" type="submit" value="Fermer" onclick="closePopUp(this)">
+                        <input class="pop-up-button" type="submit" value="Fermer" onclick="closePopUp(this)">
                     </div>
                 </div> 
             </div>
@@ -88,15 +88,15 @@
             <script>
                 function openPopUp(element) {
                     element = element.parentElement.parentElement;
-                    console.log(element.nextElementSibling);
                     element.nextElementSibling.style.display = "flex";
+                    document.body.style.overflow = "hidden";
                     //element.style.display = "none";
                     //element.nextElementSibling.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
 
                 }
                 function closePopUp(element) {
                     element = element.parentElement.parentElement.parentElement;
-                    console.log(element);
+                    document.body.style.overflow = "auto";
                     element.style.display = "none";
                     //element.previousElementSibling.style.display = "flex";
                     //element.previousElementSibling.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
