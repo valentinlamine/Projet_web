@@ -1,42 +1,42 @@
 [
     {
-        "Image": "/images/car_1.png",
-        "Brand": "Mercedes-Benz S-Class",
-        "Engine": "300 hybride",
-        "Kilometers": 100000,
-        "MaxSpeed": 250,
+        "Image": "/images/location/jesko.png",
+        "Brand": "KOENIGSEGG JESKO",
+        "Engine": "V10 7L 800",
+        "Kilometers": "20",
+        "MaxSpeed": 420,
         "Year": 2022,
-        "Price": 150000
+        "Price": "3 900 000"
     },
     {
-        "Image": "",
-        "Brand": "1977 MASERATI MERAK SS",
-        "Engine": "V6 Fuel",
-        "Kilometers": 59702,
-        "MaxSpeed": 280,
-        "Year": 1977,
-        "Price": 380000
+        "Image": "/images/location/chiron.png",
+        "Brand": "Bugatti Chiron",
+        "Engine": "V16 1200",
+        "Kilometers": "4 720",
+        "MaxSpeed": 470,
+        "Year": 2005,
+        "Price": "5 250 000"
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
+        "Image": "/images/location/huayra.png",
+        "Brand": "Pagani Huayra",
+        "Engine": "V12 650",
+        "Kilometers": "1 340",
+        "MaxSpeed": 390,
+        "Year": 2023,
+        "Price": "2 500 000"
+    },
+    {
+        "Image": "/images/location/rimac.png",
+        "Brand": "Rimac C_Two",
+        "Engine": "ELECTRIC 1200",
+        "Kilometers": "3 750",
+        "MaxSpeed": 370,
         "Year": 0,
         "Price": 0
     },
     {
-        "Image": "",
-        "Brand": "",
-        "Engine": "",
-        "Kilometers": 0,
-        "MaxSpeed": 0,
-        "Year": 0,
-        "Price": 0
-    },
-    {
-        "Image": "",
+        "Image": "/images/location/lykan.png",
         "Brand": "",
         "Engine": "",
         "Kilometers": 0,
