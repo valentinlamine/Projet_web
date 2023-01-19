@@ -1,15 +1,5 @@
-//footer button
-const buttonToTop = document.querySelector(".button-to-top");
-buttonToTop.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-
-
-//index page
 function scrollToBottom() {
+    console.log("scrolling to bottom");
     window.scrollTo({
         top: window.innerHeight,
         behavior: 'smooth'
@@ -17,6 +7,7 @@ function scrollToBottom() {
 }
 
 function scrollToTop() {
+    console.log("scrolling to top");
     window.scrollTo({
         top: 0,
         behavior: 'smooth'

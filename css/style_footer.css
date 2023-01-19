@@ -151,7 +151,7 @@ input, textarea, select {
     }
     .button-to-top {
         display: block;
-        position: fixed;
+        position: relative;
         width: 100%;
         text-align: center;
         background: linear-gradient(180deg, rgba(35,36,41,1) 0%, rgba(30,37,73,1) 100%);
