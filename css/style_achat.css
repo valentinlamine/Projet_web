@@ -299,7 +299,6 @@ input:focus {
     font-weight: 700;
 }
 
-
 .pop-up-button {
     margin-top: 10px;
     border: 1px solid #195FA5;
@@ -314,8 +313,34 @@ input:focus {
     cursor: pointer;
 }
 
+#coin {
+    position: absolute;
+    border-radius: 0px;
+    margin: 20px;
+    max-width: 40px;
+    max-height: 40px;
+    z-index: 3;
+}
 
+.coin_superieur_gauche {
+    top: 0;
+    left: 0;
+}
 
+.coin_superieur_droit {
+    top: 0;
+    right: 0;
+}
+
+.coin_inferieur_gauche {
+    bottom: 0;
+    left: 0;
+}
+
+.coin_inferieur_droit {
+    bottom: 0;
+    right: 0;
+}
 
 @media screen and (max-width: 991px) {
    .title {
@@ -369,6 +394,9 @@ input:focus {
     }
     .pop-up img {
         display: none;
+    }
+    #coin {
+        display: block;
     }
     .bottom-pop-up {
         height: 100%;
