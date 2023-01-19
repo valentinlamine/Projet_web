@@ -48,7 +48,7 @@
         <div class="cards">
             {{range .}}
             <div class="item">
-                <img src={{.Image}} alt="ford mustang">
+                <img src={{.Image}} alt="Car image">
                 <div class = "bottom-item">
                     <div class="info">
                         <div class="firstgroup">
@@ -64,7 +64,7 @@
             </div>
             <div class="pop-up-blur">
                 <div class="pop-up">
-                    <img src="{{.Image}}" alt="ford mustang">
+                    <img src="{{.Image}}" alt="Car image">
                     <div class="bottom-pop-up">
                         <p>Fiche technique</p>
                         <div class="main-info-pop-up">
@@ -83,10 +83,10 @@
                         </div>
                         <input class="pop-up-button" type="submit" value="Fermer" onclick="closePopUp(this)">
                     </div>
-                    <img src="images/icones/coin_superieur_gauche.svg" alt="coin" id="coin" class="coin_superieur_gauche">
-                    <img src="images/icones/coin_superieur_droit.svg" alt="coin" id="coin" class="coin_superieur_droit">
-                    <img src="images/icones/coin_inferieur_gauche.svg" alt="coin" id="coin" class="coin_inferieur_gauche">
-                    <img src="images/icones/coin_inferieur_droit.svg" alt="coin" id="coin" class="coin_inferieur_droit">
+                    <img src="images/icones/coin_superieur_gauche.svg" alt="coin" class="coin coin_superieur_gauche">
+                    <img src="images/icones/coin_superieur_droit.svg" alt="coin" class="coin coin_superieur_droit">
+                    <img src="images/icones/coin_inferieur_gauche.svg" alt="coin" class="coin coin_inferieur_gauche">
+                    <img src="images/icones/coin_inferieur_droit.svg" alt="coin" class="coin coin_inferieur_droit">
                 </div> 
             </div>
             {{end}}

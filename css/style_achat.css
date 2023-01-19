@@ -313,7 +313,7 @@ input:focus {
     cursor: pointer;
 }
 
-#coin {
+.pop-up .coin {
     position: absolute;
     border-radius: 0px;
     margin: 20px;
@@ -395,7 +395,7 @@ input:focus {
     .pop-up img {
         display: none;
     }
-    #coin {
+    .pop-up .coin {
         display: block;
     }
     .bottom-pop-up {
